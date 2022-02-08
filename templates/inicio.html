@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corrector Ortográfico</title>
+    <link rel="shortcut icon" href="static/img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="contacto">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Aprende las Reglas Ortográficas</h1>
+            <h2>Con una página web potente</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Reglas de ortográfia</h2>
+            <div class="abs-center">
+                <form action="{{ url_for('buscador') }}" method="POST">
+                    <input type="text" class="form-control" name="palabra" placeholder="Ingresa una palabra">
+                    <button>enviar</button>
+                </form>
+            </div>
+            </br>
+
+        <div class="general">
+            <div class="contenedor-sobre-nosotros-dos">
+                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Agudas, graves, esdrújulas y sobresdrújulas</h3>
+                    <p>Importante es destacar que todas las palabras en castellano llevan acento.
+                    El acento es la mayor intensidad de la voz para destacar una sílaba respecto a las demás.
+                    Algunas palabras llevan un tilde identificando el acento ortográfico.
+                    Todas las palabras llevan acento pero no todas llevan tilde.
+                    Existen reglas para determinar en qué sílaba va el acento ortográfico (tilde).
+                    Los cuatro tipos de palabras que determinan la acentuación son:
+                    Agudas
+                    Graves
+                    Esdrújulas
+                    Sobresdrújulas
+                    <h3><a href="ages">Leer mas</a></h3>
+                    </p>
+
+                    <h3><span>2</span>Palabras terminadas en ción, sión y xión</h3>
+                    <p>Para comprender las reglas de ortografía que usamos con las palabras terminadas en “–ción,” 
+                    “-sión” y “-xión”, primero veamos qué es un sustantivo y un adjetivo. El sustantivo es 
+                    una clase de palabra que designa a la persona, animal o cosa. Otra manera de llamar al sustantivo es nombre. 
+                    <h3><a href="cion">Leer mas</a></h3>
+                    </p>
+
+                    <h3><span>3</span>Uso de la B y V</h3>
+                    <p>El uso de la b y la v en castellano sigue normas muy semejantes a las vistas para la lengua gallega.</p>
+                    <h3><a href="byv">Leer mas</a></h3>
+
+                    <h3><span>4</span>Reglas de la Z, C y S</h3>
+                    <p>Cuando la Z está entre vocales débiles, se transforma en C. Esto suele pasar en varios plurales de palabras que terminan en Z. Por ejemplo: pez/peces, lápiz/lápices, tamiz/tamices. 
+                    Los adjetivos terminados en -osa u -oso se escriben siempre con S.</p>
+                    <h3><a href="zcs">Leer mas</a></h3>
+
+                    <h3><span>5</span>Reglas de la Y e I</h3>
+                    <p>Las palabras que comienzan con la I y están seguidas de una consonante, se
+                    deben escribir con I. Por ejemplo: invasión</p>
+                    <h3><a href="yei">Leer mas</a></h3>
+
+                    <h3><span>6</span>Reglas de la G e J</h3>
+                    <p>La letra G en combinación con la letra E y la I tienen un sonido fuerte. Por
+                    ejemplo: Eugenia, gigante, genial.</p>
+                    <h3><a href="gyj">Leer mas</a></h3>
+
+                    <h3><span>7</span>Reglas de la R</h3>
+                    <p>La RR se empleará únicamente en posición intervocálica. Incluso cuando las
+                    palabras empiecen con ese sonido, con la r “fuerte”, se escribirá de todos
+                    modos con una sola letra. Por ejemplo: rápido, revolucionario, río, ferrocarril,
+                    correr.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <h2 class="titulo-final">&copy; Mendoza Futura | La Dormida - Santa Rosa</h2>
+    </footer>
+</body>
+
+</html>
